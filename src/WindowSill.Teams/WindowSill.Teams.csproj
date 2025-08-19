@@ -7,7 +7,7 @@
 
         <PackageId>WindowSill.Teams</PackageId>
         <Version>0.0.1</Version>
-        <Authors>veler</Authors>
+        <Authors>Etienne Baudoux</Authors>
         <Title>Microsoft Teams</Title>
         <Description>This WindowSill extension allows to control your Microsoft Teams meeting even when it is in background or minimized.</Description>
         <PackageIcon>Assets/microsoft_teams_2019.png</PackageIcon>

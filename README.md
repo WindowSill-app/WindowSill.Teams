@@ -4,7 +4,7 @@ This repository contains the source code for the Microsoft Teams extension for W
 
 # Build, Run & Debug
 
-To build and run the Web Browser extension, follow these steps:
+To build and run the Microsoft Teams extension, follow these steps:
 1. Clone the repository.
 1. Open the solution `WindowSill.Teams.slnx` with Visual Studio, Visual Studio Code or Rider.
 1. Start Debugging in your IDE of choice.
