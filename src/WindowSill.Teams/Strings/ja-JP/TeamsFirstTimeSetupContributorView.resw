@@ -118,11 +118,11 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ConnectGuide" xml:space="preserve">
-    <value>Setup guide</value>
+    <value>設定ガイド</value>
   </data>
   <data name="Intro" xml:space="preserve">
-    <value>WindowSill lets you control your Microsoft Teams calls with ease. To get started, enable the third-party API in your Teams settings by following the setup guide below.
+    <value>WindowSillを使用して、Microsoft Teamsの通話を簡単に管理できます。開始するには、以下の設定ガイドに従って、Teamsの設定でサードパーティAPIを有効にしてください。
 
-Note: A work or school Microsoft Teams account is required.</value>
+注意：作業用または学校用のMicrosoft Teamsアカウントが必要です。</value>
   </data>
 </root>

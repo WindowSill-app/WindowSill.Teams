@@ -118,15 +118,15 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="General" xml:space="preserve">
-    <value>General</value>
+    <value>सामान्य</value>
   </data>
   <data name="Connect.Header" xml:space="preserve">
-    <value>Connect WindowSill to Microsoft Teams</value>
+    <value>माइक्रोसॉफ्ट टीमों के साथ विंडो कनेक्ट करें</value>
   </data>
   <data name="Connect.Description" xml:space="preserve">
-    <value>To enable Microsoft Teams integration, enable third-party API in Microsoft Teams by following the steps on the linked page.</value>
+    <value>माइक्रोसॉफ्ट टीमों इंटीग्रेशन सक्षम करने के लिए, लिंक किए गए पृष्ठ पर चरणों का पालन करके माइक्रोसॉफ्ट टीमों में थर्ड-पार्टी API को सक्षम करें।</value>
   </data>
   <data name="ConnectGuide" xml:space="preserve">
-    <value>Setup guide</value>
+    <value>सेटअप गाइड</value>
   </data>
 </root>

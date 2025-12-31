@@ -24,11 +24,6 @@ public sealed class TeamsSill : ISillActivatedByDefault, ISillFirstTimeSetup, IS
 {
     private readonly ISettingsProvider _settingsProvider;
     private readonly ILogger _logger;
-    private readonly Lazy<SillListViewButtonItem> _likeButton;
-    private readonly Lazy<SillListViewButtonItem> _loveButton;
-    private readonly Lazy<SillListViewButtonItem> _applauseButton;
-    private readonly Lazy<SillListViewButtonItem> _laughButton;
-    private readonly Lazy<SillListViewButtonItem> _wowButton;
     private readonly Lazy<SillListViewButtonItem> _microphoneButton;
     private readonly Lazy<SillListViewButtonItem> _leaveButton;
     private readonly string _pluginContentDirectory;
@@ -44,41 +39,6 @@ public sealed class TeamsSill : ISillActivatedByDefault, ISillFirstTimeSetup, IS
         _logger = this.Log();
 
         _pluginContentDirectory = pluginInfo.GetPluginContentDirectory();
-
-        _likeButton
-            = new(() =>
-                new(
-                    new BitmapImage(new Uri(Path.Combine(_pluginContentDirectory, "Assets", "like.gif"))),
-                    "/WindowSill.Teams/Misc/Like".GetLocalizedString(),
-                    OnLikeButtonClickAsync));
-
-        _loveButton
-            = new(() =>
-                new(
-                    new BitmapImage(new Uri(Path.Combine(_pluginContentDirectory, "Assets", "love.gif"))),
-                    "/WindowSill.Teams/Misc/Love".GetLocalizedString(),
-                    OnLoveButtonClickAsync));
-
-        _applauseButton
-            = new(() =>
-                new(
-                    new BitmapImage(new Uri(Path.Combine(_pluginContentDirectory, "Assets", "applause.gif"))),
-                    "/WindowSill.Teams/Misc/Applause".GetLocalizedString(),
-                    OnApplauseButtonClickAsync));
-
-        _laughButton
-            = new(() =>
-                new(
-                    new BitmapImage(new Uri(Path.Combine(_pluginContentDirectory, "Assets", "laugh.gif"))),
-                    "/WindowSill.Teams/Misc/Laugh".GetLocalizedString(),
-                    OnLaughButtonClickAsync));
-
-        _wowButton
-            = new(() =>
-                new(
-                    new BitmapImage(new Uri(Path.Combine(_pluginContentDirectory, "Assets", "wow.gif"))),
-                    "/WindowSill.Teams/Misc/Wow".GetLocalizedString(),
-                    OnWowButtonClickAsync));
 
         _microphoneButton
             = new(() =>
@@ -182,15 +142,6 @@ public sealed class TeamsSill : ISillActivatedByDefault, ISillFirstTimeSetup, IS
 
             if (!_cancellationToken.IsCancellationRequested && e.MeetingPermissions is not null)
             {
-                if (e.MeetingPermissions.CanReact)
-                {
-                    ViewList.Add(_likeButton.Value);
-                    ViewList.Add(_loveButton.Value);
-                    ViewList.Add(_applauseButton.Value);
-                    ViewList.Add(_laughButton.Value);
-                    ViewList.Add(_wowButton.Value);
-                }
-
                 if (e.MeetingPermissions.CanToggleMute)
                 {
                     if (e.MeetingState is not null && e.MeetingState.IsMuted)
@@ -213,36 +164,6 @@ public sealed class TeamsSill : ISillActivatedByDefault, ISillFirstTimeSetup, IS
                 }
             }
         }).Forget();
-    }
-
-    private async Task OnLikeButtonClickAsync()
-    {
-        Guard.IsNotNull(_teamsClient);
-        await _teamsClient.ThumbsUpAsync(_cancellationToken);
-    }
-
-    private async Task OnLoveButtonClickAsync()
-    {
-        Guard.IsNotNull(_teamsClient);
-        await _teamsClient.LoveAsync(_cancellationToken);
-    }
-
-    private async Task OnApplauseButtonClickAsync()
-    {
-        Guard.IsNotNull(_teamsClient);
-        await _teamsClient.ApplauseAsync(_cancellationToken);
-    }
-
-    private async Task OnLaughButtonClickAsync()
-    {
-        Guard.IsNotNull(_teamsClient);
-        await _teamsClient.LaughAsync(_cancellationToken);
-    }
-
-    private async Task OnWowButtonClickAsync()
-    {
-        Guard.IsNotNull(_teamsClient);
-        await _teamsClient.WowAsync(_cancellationToken);
     }
 
     private async Task OnMicrophoneButtonClickAsync()

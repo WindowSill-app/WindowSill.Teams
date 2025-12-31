@@ -118,15 +118,15 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="General" xml:space="preserve">
-    <value>General</value>
+    <value>一般</value>
   </data>
   <data name="Connect.Header" xml:space="preserve">
-    <value>Connect WindowSill to Microsoft Teams</value>
+    <value>將窗台連接到微軟Teams</value>
   </data>
   <data name="Connect.Description" xml:space="preserve">
-    <value>To enable Microsoft Teams integration, enable third-party API in Microsoft Teams by following the steps on the linked page.</value>
+    <value>若要启用微軟Teams整合，請按照連結頁面上的步驟，在微軟Teams中啟用第三方API。</value>
   </data>
   <data name="ConnectGuide" xml:space="preserve">
-    <value>Setup guide</value>
+    <value>設定指南</value>
   </data>
 </root>

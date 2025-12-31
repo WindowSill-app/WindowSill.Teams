@@ -118,15 +118,15 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="General" xml:space="preserve">
-    <value>General</value>
+    <value>Загальні</value>
   </data>
   <data name="Connect.Header" xml:space="preserve">
-    <value>Connect WindowSill to Microsoft Teams</value>
+    <value>Підключити вікно Sill до Microsoft Teams</value>
   </data>
   <data name="Connect.Description" xml:space="preserve">
-    <value>To enable Microsoft Teams integration, enable third-party API in Microsoft Teams by following the steps on the linked page.</value>
+    <value>Щоб увімкнути інтеграцію Microsoft Teams, увімкніть API сторонніх розробників у Microsoft Teams, дотримуючись кроків на пов’язаній сторінці.</value>
   </data>
   <data name="ConnectGuide" xml:space="preserve">
-    <value>Setup guide</value>
+    <value>Посібник з налаштування</value>
   </data>
 </root>

@@ -121,12 +121,12 @@
     <value>General</value>
   </data>
   <data name="Connect.Header" xml:space="preserve">
-    <value>Connect WindowSill to Microsoft Teams</value>
+    <value>Conectar WindowSill a Microsoft Teams</value>
   </data>
   <data name="Connect.Description" xml:space="preserve">
-    <value>To enable Microsoft Teams integration, enable third-party API in Microsoft Teams by following the steps on the linked page.</value>
+    <value>Para habilitar la integración con Microsoft Teams, active la API de terceros en Microsoft Teams siguiendo los pasos en la página vinculada.</value>
   </data>
   <data name="ConnectGuide" xml:space="preserve">
-    <value>Setup guide</value>
+    <value>Guía de configuración</value>
   </data>
 </root>

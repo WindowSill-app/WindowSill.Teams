@@ -118,11 +118,11 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ConnectGuide" xml:space="preserve">
-    <value>Setup guide</value>
+    <value>Посібник із налаштування</value>
   </data>
   <data name="Intro" xml:space="preserve">
-    <value>WindowSill lets you control your Microsoft Teams calls with ease. To get started, enable the third-party API in your Teams settings by following the setup guide below.
+    <value>WindowSill дозволяє вам легко керувати дзвінками у Microsoft Teams. Щоб почати, увімкніть API сторонніх розробників у налаштуваннях Teams, виконавши наведене нижче керівництво з налаштування.
 
-Note: A work or school Microsoft Teams account is required.</value>
+Примітка: потрібен робочий або навчальний обліковий запис Microsoft Teams.</value>
   </data>
 </root>

@@ -68,36 +68,6 @@ internal sealed class TeamsClient : IDisposable
         });
     }
 
-    internal Task<int> ApplauseAsync(CancellationToken cancellationToken)
-    {
-        return SendReactionAsync("applause", cancellationToken);
-    }
-
-    internal Task<int> LaughAsync(CancellationToken cancellationToken)
-    {
-        return SendReactionAsync("laugh", cancellationToken);
-    }
-
-    internal Task<int> LoveAsync(CancellationToken cancellationToken)
-    {
-        return SendReactionAsync("love", cancellationToken);
-    }
-
-    internal Task<int> WowAsync(CancellationToken cancellationToken)
-    {
-        return SendReactionAsync("wow", cancellationToken);
-    }
-
-    internal Task<int> ThumbsUpAsync(CancellationToken cancellationToken)
-    {
-        return SendReactionAsync("like", cancellationToken);
-    }
-
-    internal Task<int> ToggleBackgroundBlurAsync(CancellationToken cancellationToken)
-    {
-        return CallServiceAsync("toggle-background-blur", cancellationToken);
-    }
-
     internal Task<int> ToggleMuteAsync(CancellationToken cancellationToken)
     {
         return CallServiceAsync("toggle-mute", cancellationToken);
@@ -121,11 +91,6 @@ internal sealed class TeamsClient : IDisposable
     internal Task<int> LeaveCallAsync(CancellationToken cancellationToken)
     {
         return CallServiceAsync("leave-call", cancellationToken);
-    }
-
-    private async Task<int> SendReactionAsync(string reaction, CancellationToken cancellationToken)
-    {
-        return await CallServiceAsync("send-reaction", cancellationToken, new { @Type = reaction });
     }
 
     private async Task<int> CallServiceAsync(string action, CancellationToken cancellationToken, object? parameters = default)
